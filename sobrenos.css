@@ -1,0 +1,367 @@
+
+/* Sobre Nós - Estilos Específicos */
+
+.sobre-nos-main {
+  padding-top: 7rem;
+}
+
+/* Hero Section */
+.sobre-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, rgba(6, 28, 43, 0.9) 100%);
+  padding: 4rem 0;
+  position: relative;
+}
+
+.sobre-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.sobre-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gold);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--bronze);
+}
+
+.sobre-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Nossa História */
+.nossa-historia {
+  padding: 5rem 0;
+  background-color: rgba(6, 28, 43, 0.95);
+}
+
+.historia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.historia-content h2 {
+  margin-bottom: 2rem;
+}
+
+.historia-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.historia-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(227, 192, 136, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.missao-visao-valores {
+  padding: 5rem 0;
+  background-color: var(--navy);
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.mvv-card {
+  background-color: rgba(6, 28, 43, 0.6);
+  border: 1px solid rgba(227, 192, 136, 0.2);
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mvv-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(227, 192, 136, 0.5);
+  box-shadow: 0 10px 30px rgba(227, 192, 136, 0.1);
+}
+
+.mvv-icon {
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mvv-title {
+  color: var(--gold);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.mvv-text {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Nossa Equipe */
+.nossa-equipe {
+  padding: 5rem 0;
+  background-color: rgba(6, 28, 43, 0.95);
+}
+
+.equipe-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.equipe-text p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.equipe-qualificacoes {
+  list-style: none;
+  padding: 0;
+}
+
+.equipe-qualificacoes li {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.equipe-qualificacoes li::before {
+  content: '✓';
+  color: var(--gold);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.equipe-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(6, 28, 43, 0.6);
+  border: 1px solid rgba(227, 192, 136, 0.2);
+  border-radius: 8px;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Certificações */
+.certificacoes {
+  padding: 5rem 0;
+  background-color: var(--navy);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cert-item {
+  background-color: rgba(6, 28, 43, 0.6);
+  border: 1px solid rgba(227, 192, 136, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.cert-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(227, 192, 136, 0.5);
+}
+
+.cert-icon {
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cert-item h4 {
+  color: var(--gold);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.cert-item p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Call to Action */
+.cta-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, rgba(6, 28, 43, 0.95) 0%, var(--navy) 100%);
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre-title {
+    font-size: 2.5rem;
+  }
+  
+  .historia-grid,
+  .equipe-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .historia-image img {
+    height: 300px;
+  }
+  
+  .mvv-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .equipe-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-nos-main {
+    padding-top: 6rem;
+  }
+  
+  .sobre-hero {
+    padding: 3rem 0;
+  }
+  
+  .sobre-title {
+    font-size: 2rem;
+  }
+  
+  .sobre-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .mvv-card,
+  .cert-item {
+    padding: 1.5rem;
+  }
+  
+  .nossa-historia,
+  .missao-visao-valores,
+  .nossa-equipe,
+  .certificacoes,
+  .cta-section {
+    padding: 3rem 0;
+  }
+}
